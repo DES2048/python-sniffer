@@ -4,7 +4,8 @@ import textwrap
 
 
 def get_mac_addr(mac_data):
-    pass
+    bytes_str = map('{:02x}'.format, macdata)
+    return ':'.join(bytes_str).upper()
 
 
 def ethernet_frame(data):
